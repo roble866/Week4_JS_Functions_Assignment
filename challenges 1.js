@@ -176,3 +176,35 @@ Extra Credit:
 - Extend the program to accept multiple students' names and scores and generate a report for each student using a loop.
 - Use an arrow function for at least one of the functions.
 */
+
+// Answer for Question 1
+
+function calculateAverage(score1, score2, score3) {
+  return (score1 + score2 + score3) / 3;
+}
+
+// Answer for Question 2
+
+function determineGrade(average) {
+  if (average >= 90) {
+    return "A"}
+    else if (average >= 80) {
+      return "B"
+    }
+    else if (average >= 70) {
+      return "C"
+    }
+    else { 
+      return "F"
+
+    }
+
+}
+
+// Answer for Question 3
+
+function generateReport(studentName, score1, score2, score3) {
+  
+}
+
+
