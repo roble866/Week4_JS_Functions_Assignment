@@ -2,7 +2,7 @@
 Task 1: Library Late Fee Calculator 🚀🚀🚀🚀
 
 You are working at a library and need to calculate late 
-fees for overdue books. Write a function called `calculateLateFee` 
+fees for overdue books. Write a function called `calculateLateFee` gitgit
 that takes the number of overdue days as input and calculates 
 the fee ($0.25 per day). Prompt the user to input the
 number of overdue days.
@@ -18,12 +18,19 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+const input = prompt (`input the number of overdue days`)
+
+const overdueDays = Number(input);
+
+function calculateLateFee(days) {
+   return input * .25
+}
+
+console.log(calculateLateFee())
 
 
 // Extra Task:
 // - Convert the function into a function expression.
-
-
 
 /*
 Task 2 : Favorite Color Finder 🚀🚀🚀🚀
@@ -45,6 +52,23 @@ Output: "Red: You are passionate and bold."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+
+const input = prompt ("input the color")
+
+function findColorMeaning(color) {
+  if (color === "blue") {
+    console.log("You love calm and peace.");
+  } else if (color === "red") {
+    console.log("You are passionate and bold.");
+  } else if (color === "green") {
+    console.log("You are connected to nature.");
+  } else if (color === "yellow") {
+    console.log("You radiate happiness and energy.");
+  } else {
+    console.log("That's a unique choice!");
+  }
+}
+console.log(findColorMeaning(input)())
 
 
 // Extra Task:
@@ -68,7 +92,13 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+const clientName = "John Doe";
+const caseNumber = 12345;
 
+function logCase(name, number) {
+  return `Case #${number}: ${name}'s case is now logged.`;
+}
+ console.log(logCase(clientName, caseNumber))
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
@@ -94,7 +124,18 @@ Output: "Amina is present."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+const studentName = "Amina";
+const isPresent = true;
 
+function markAttendance(name, present) {
+  if (present) {
+    return `${name} is present.`;
+  } else {
+    return `${name} is absent.`;
+  }
+}
+const attendance = markAttendance(studentName, isPresent);
+console.log(attendance);
 
 // Extra Task:
 // - Convert the function into a function expression.
@@ -135,3 +176,35 @@ Extra Credit:
 - Extend the program to accept multiple students' names and scores and generate a report for each student using a loop.
 - Use an arrow function for at least one of the functions.
 */
+
+// Answer for Question 1
+
+function calculateAverage(score1, score2, score3) {
+  return (score1 + score2 + score3) / 3;
+}
+
+// Answer for Question 2
+
+function determineGrade(average) {
+  if (average >= 90) {
+    return "A"}
+    else if (average >= 80) {
+      return "B"
+    }
+    else if (average >= 70) {
+      return "C"
+    }
+    else { 
+      return "F"
+
+    }
+
+}
+
+// Answer for Question 3
+
+function generateReport(studentName, score1, score2, score3) {
+  
+}
+
+
